@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5e7ff"
+    android:orientation="vertical"
+    tools:context=".HeatMap">
+    <com.ortiz.touchview.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/heatmapnew"
+
+        />
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar_bmi_activity"
+        app:title="HeatMap"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#d3a8ff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/home"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="#000000"
+            android:layout_marginStart="55dp"/>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pin"
+            android:src="@drawable/ic_baseline_pin_drop_24"
+            app:tint="#000000"
+            android:layout_marginStart="30dp"/>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/forum"
+            android:src="@drawable/ic_baseline_forum_24"
+            app:tint="#000000"
+            android:layout_marginStart="30dp"/>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/features"
+            android:src="@drawable/ic_baseline_handyman_24"
+            app:tint="#000000"
+            android:layout_marginStart="35dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

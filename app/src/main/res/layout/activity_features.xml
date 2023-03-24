@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    tools:context=".Features">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/idhoome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_2"
+        app:layout_constraintBottom_toTopOf="@id/cv"
+
+        />
+<androidx.cardview.widget.CardView
+    app:layout_constraintTop_toBottomOf="@id/idhoome"
+    android:layout_width="360dp"
+    android:id="@+id/cv"
+    android:layout_height="150dp"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ring"
+            android:textSize="45dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#666666"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_1"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/features"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        app:layout_constraintTop_toBottomOf="@id/cv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+
+        android:textColor="#000000"
+        android:textSize="40dp"/>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/features" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/features"
+    android:layout_marginTop="32dp"
+
+    >
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autocomplete"
+        android:layout_weight="1"
+        android:text="Power"
+        android:background="@color/white"
+        android:textSize="40dp"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/power"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/features"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:id="@+id/Gesture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/power"
+        android:layout_marginTop="32dp"
+
+        >
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Gestures"
+            android:background="@color/white"
+            android:textSize="40dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/gesturesbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/power"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:id="@+id/setup"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Gesture"
+        android:layout_marginTop="32dp"
+
+        >
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Setup"
+            android:background="@color/white"
+            android:textSize="40dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/gesturesetup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Gesture"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setup"
+        android:layout_marginTop="32dp"
+
+        >
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxtvi"
+            android:layout_weight="1"
+            android:text="Voice"
+            android:background="@color/white"
+            android:textSize="40dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/voicebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setup"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/home"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="#000000"
+            android:layout_marginStart="55dp"/>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pin"
+            android:src="@drawable/ic_baseline_pin_drop_24"
+            app:tint="#000000"
+            android:layout_marginStart="30dp"/>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/forum"
+            android:src="@drawable/ic_baseline_forum_24"
+            app:tint="#000000"
+            android:layout_marginStart="30dp"/>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/features1"
+            android:src="@drawable/ic_baseline_handyman_24"
+            app:tint="#000000"
+            android:layout_marginStart="35dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

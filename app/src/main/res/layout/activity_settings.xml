@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="60dp"
+    android:id="@+id/settings"
+    android:text="Settings"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:fontFamily="sans-serif-light"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="25sp"
+    android:layout_marginTop="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        app:layout_constraintTop_toBottomOf="@id/settings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="5sp"
+        android:id="@+id/as"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:backgroundTint="#f4f3f3"
+        android:background="#f4f3f3"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/as"
+        android:layout_marginTop="5sp"
+        android:text="    Profile"
+        android:id="@+id/profile"
+        android:textColor="#6b088f"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#f4f3f3"
+
+        android:textSize="30sp"
+        android:layout_marginTop="2sp"
+        app:layout_constraintTop_toBottomOf="@id/profile"
+        android:text="    Account Information"
+        android:id="@+id/aci"
+        android:textColor="#6b088f"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        app:layout_constraintTop_toBottomOf="@id/aci"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/cd"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:backgroundTint="#f4f3f3"
+        android:background="#f4f3f3"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/cd"
+        android:layout_marginTop="5sp"
+        android:text="    Address"
+        android:id="@+id/address"
+        android:textColor="#6b088f"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#f4f3f3"
+
+        android:textSize="30sp"
+        android:id="@+id/ec"
+        android:layout_marginTop="2sp"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        android:text="    Emergency Contacts"
+        android:textColor="#6b088f"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy and Security"
+        app:layout_constraintTop_toBottomOf="@id/ec"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/ps"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:backgroundTint="#f4f3f3"
+        android:background="#f4f3f3"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/ps"
+        android:layout_marginTop="5sp"
+        android:text="    Password"
+        android:id="@+id/password"
+        android:textColor="#6b088f"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#f4f3f3"
+
+        android:textSize="30sp"
+        android:layout_marginTop="2sp"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:text="    Privacy Policy"
+        android:id="@+id/pp"
+        android:textColor="#6b088f"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        app:layout_constraintTop_toBottomOf="@id/pp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/others"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:backgroundTint="#f4f3f3"
+        android:background="#f4f3f3"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/others"
+        android:layout_marginTop="5sp"
+        android:text="    Health Information"
+        android:id="@+id/heath"
+        android:textColor="#6b088f"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toBottomOf="@id/heath"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/goback"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

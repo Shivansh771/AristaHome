@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#f5e7ff"
+    android:background="#f5e7ff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="--- Get Current Location ---"
+        android:textColor="#651FFF"
+        android:textSize="0.001sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Latitude"
+        android:textColor="@color/black"
+        android:textSize="0.001sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:textColor="@color/black"
+        android:textSize="0.001sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_latitude" />
+
+    <TextView
+        android:id="@+id/tv_countryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Country Name"
+        android:textColor="@color/black"
+        android:textSize="0.001sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_longitude" />
+
+    <TextView
+        android:id="@+id/tv_Locality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Locality"
+        android:textColor="@color/black"
+        android:textSize="0.001sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_countryName" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="0.001sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Locality" />
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:hint="phone number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"
+        android:id="@+id/cardview"
+        android:layout_marginTop="50dp"
+
+        android:layout_margin="10dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="100dp"
+                android:src="@drawable/logo"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Welcome To"
+
+                    android:textSize="35sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Arista"
+                    android:textStyle="bold"
+                    android:textColor="#9754cb"
+                    android:textSize="35sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_height="23dp"
+            android:src="@drawable/dots"
+            android:layout_width="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/threedots"
+            android:layout_marginStart="350dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="100dp"
+            android:text="One of a kind, all in one women safety app"
+            android:textColor="#b79bca"
+            />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="165sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#d3a8ff"
+        android:textColor="@color/white"
+        android:text="PANIC"
+        android:id="@+id/panic"
+        app:layout_constraintTop_toBottomOf="@id/cardview"/>
+    <Button
+        android:layout_width="165sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#fff500"
+
+        android:textColor="#909090"
+        android:text="flash"
+        android:id="@+id/flash"
+        app:layout_constraintTop_toBottomOf="@id/cardview"/>
+
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="230sp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/heatmap"
+        app:layout_constraintTop_toBottomOf="@id/panic"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/map"
+        />
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40sp"
+        android:text="Tap to Activate SOS"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/home"
+        android:src="@drawable/ic_baseline_home_24"
+        app:tint="#000000"
+        android:layout_marginStart="55dp"/>
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pin"
+        android:src="@drawable/ic_baseline_pin_drop_24"
+        app:tint="#000000"
+        android:layout_marginStart="30dp"/>
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/forum"
+        android:src="@drawable/ic_baseline_forum_24"
+        app:tint="#000000"
+        android:layout_marginStart="30dp"/>
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/features"
+        android:src="@drawable/ic_baseline_handyman_24"
+        app:tint="#000000"
+        android:layout_marginStart="35dp"/>
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
