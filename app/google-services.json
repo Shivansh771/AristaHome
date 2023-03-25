@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "355916344297",
+    "firebase_url": "https://arista-232bf-default-rtdb.firebaseio.com",
+    "project_id": "arista-232bf",
+    "storage_bucket": "arista-232bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355916344297:android:a01171969283b427fbb978",
+        "android_client_info": {
+          "package_name": "com.example.arista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355916344297-9gs0en4miptieqooalet61ef9ma01fs2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arista",
+            "certificate_hash": "cdfc371b58fe58923b2f1e58cb9e1249c9d1319e"
+          }
+        },
+        {
+          "client_id": "355916344297-j00h8jmui9jdhco19vqcbgecj8b3q42l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSRlAMdED5NAozaQZTj1PLoYyjk3tH3zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355916344297-j00h8jmui9jdhco19vqcbgecj8b3q42l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "355916344297-60e0h89vp8j7cp4q3tjs0drlp1udph0d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.arista"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355916344297:android:7112a1bdbf7cc36cfbb978",
+        "android_client_info": {
+          "package_name": "com.example.firebasetouchaddapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355916344297-j00h8jmui9jdhco19vqcbgecj8b3q42l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSRlAMdED5NAozaQZTj1PLoYyjk3tH3zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355916344297-j00h8jmui9jdhco19vqcbgecj8b3q42l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "355916344297-60e0h89vp8j7cp4q3tjs0drlp1udph0d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.arista"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355916344297:android:e97a4d0325fb26e8fbb978",
+        "android_client_info": {
+          "package_name": "com.example.livelocations2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355916344297-j00h8jmui9jdhco19vqcbgecj8b3q42l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSRlAMdED5NAozaQZTj1PLoYyjk3tH3zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355916344297-j00h8jmui9jdhco19vqcbgecj8b3q42l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "355916344297-60e0h89vp8j7cp4q3tjs0drlp1udph0d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.arista"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

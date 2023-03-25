@@ -27,6 +27,7 @@ import com.example.livelocations2.databinding.ActivityMainBinding
 import com.example.livelocations2.sct.setUp
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.google.firebase.firestore.FirebaseFirestore
 import java.io.IOException
 import java.util.*
 import java.util.logging.Logger.global
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
+        val db=FirebaseFirestore.getInstance()
 
         if(Build.VERSION.SDK_INT>=25){
             sct.setUp(applicationContext)
@@ -49,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
         mainBinding.btnLocation.setOnClickListener {
-            var number:String?=mainBinding?.editTextPhone?.toString()
+            //var number:String?=mainBinding?.editTextPhone?.toString()
             getLocation()
             sendSMS()
 
@@ -73,6 +75,8 @@ class MainActivity : AppCompatActivity() {
 
                 }
             }
+        //readfromFireStore()
+
         mainBinding.panic.setOnClickListener{
             try{
                 val soundUri=Uri.parse("android.resource://com.example.livelocations2/"+R.raw.app_src_main_res_raw_press_start)
@@ -140,10 +144,17 @@ class MainActivity : AppCompatActivity() {
         var sms=SmsManager.getDefault()
         var mail="An SOS alert was triggered by the user at the location; ${mainBinding?.tvLatitude?.text.toString()}  ${mainBinding?.tvLongitude?.text.toString()} "
         val mail2="${mainBinding?.tvAddress?.text.toString()}"
-        var number:String=mainBinding.editTextPhone.text.toString()
 
-        sms.sendTextMessage(number,null,mail,null,null)
-        sms.sendTextMessage(number,null,mail2,null,null)
+
+        sms.sendTextMessage("9315682014",null,mail,null,null)
+        sms.sendTextMessage("9315682014",null,mail2,null,null)
+        sms.sendTextMessage("9833392038",null,mail,null,null)
+
+        sms.sendTextMessage("9833392038",null,mail2,null,null)
+        sms.sendTextMessage("9137170740",null,mail,null,null)
+
+        sms.sendTextMessage("9137170740",null,mail2,null,null)
+
     }
     private fun isLocationEnabled(): Boolean {
         val locationManager: LocationManager =
@@ -165,6 +176,22 @@ class MainActivity : AppCompatActivity() {
             return true
         }
         return false
+    }
+    fun readfromFireStore(){
+        val db=FirebaseFirestore.getInstance()
+        db.collection("users").get().addOnCompleteListener{
+            val ph1:StringBuffer= StringBuffer()
+            val ph2:StringBuffer= StringBuffer()
+            val ph3:StringBuffer=StringBuffer()
+            if(it.isSuccessful){
+                for(document in it.result!!){
+                    ph1.append(document.data.getValue("ph1"))
+                    ph2.append(document.data.getValue("ph2"))
+                    ph3.append(document.data.getValue("ph3"))
+
+                }
+            }
+        }
     }
     private fun requestPermissions() {
         ActivityCompat.requestPermissions(
